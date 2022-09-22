@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#E3E3E3"
     android:layout_margin="8dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,7 +18,7 @@
 
         <TextView
             android:id="@+id/txtJudul"
-            android:layout_width="wrap_content"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:text="judul"
             android:textSize="24sp"
@@ -26,7 +27,7 @@
 
         <TextView
             android:id="@+id/txtIsi"
-            android:layout_width="wrap_content"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:text="isi"
             android:textSize="20sp"

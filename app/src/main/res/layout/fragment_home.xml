@@ -31,6 +31,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout4"
+        android:background="#E3E3E3"
         android:layout_width="409dp"
         android:layout_height="66dp"
         app:layout_constraintEnd_toEndOf="parent"
