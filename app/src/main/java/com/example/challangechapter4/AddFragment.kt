@@ -56,8 +56,15 @@ class AddFragment : Fragment() {
         val data = DataNote(null, title = judul, content = isi)
         viewModel.addNote(data)
 
+//        val data = DataNote(null, title = judul, content = isi)
+//        if (data.content.isEmpty() && data.title.isEmpty()){
+//            Toast.makeText(context, "Note Kosong", Toast.LENGTH_SHORT).show()
+//        }else{
+//            viewModel.addNote(data)
+//        }
 
-        Toast.makeText(context, "berhasil", Toast.LENGTH_SHORT).show()
+
+        Toast.makeText(context, "Berhasil", Toast.LENGTH_SHORT).show()
         findNavController().navigate(R.id.action_addFragment_to_homeFragment)
     }
 

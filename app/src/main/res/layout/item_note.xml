@@ -18,6 +18,7 @@
 
         <TextView
             android:id="@+id/txtJudul"
+            android:textColor="@color/black"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:text="judul"
@@ -27,6 +28,7 @@
 
         <TextView
             android:id="@+id/txtIsi"
+            android:textColor="@color/black"
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:text="isi"

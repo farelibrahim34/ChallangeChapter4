@@ -40,6 +40,7 @@
 
         <TextView
             android:id="@+id/txtUsername"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -51,6 +52,7 @@
 
         <TextView
             android:id="@+id/txtLogout"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
