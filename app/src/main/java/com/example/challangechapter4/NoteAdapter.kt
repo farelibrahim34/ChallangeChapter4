@@ -11,9 +11,12 @@ import com.example.challangechapter4.room.NoteDatabase
 
 class NoteAdapter(val requireContext: Context,val listNote: List<DataNote>): RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
 
-    var DBNote: NoteDatabase? = null
 
     class ViewHolder(var binding : ItemNoteBinding): RecyclerView.ViewHolder(binding.root) {
+        fun data(itemData : DataNote){
+            binding.datanote = itemData
+
+        }
 
     }
 
@@ -25,8 +28,11 @@ class NoteAdapter(val requireContext: Context,val listNote: List<DataNote>): Rec
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = listNote[position]
 
-        holder.binding.txtJudul.text = listNote[position].title
-        holder.binding.txtIsi.text = listNote[position].content
+//        holder.binding.txtJudul.text = listNote[position].title
+//        holder.binding.txtIsi.text = listNote[position].content
+
+        holder.data(listNote[position])
+
         holder.binding.btnEdit.setOnClickListener {
             val action = HomeFragmentDirections.actionHomeFragmentToEditFragment(data)
             Navigation.findNavController(it).navigate(action)
